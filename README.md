@@ -37,3 +37,11 @@
 - [x] **觀測儀表板與報告**：
   - [x] 成功繪製 4 拼圖資料觀測儀表板 (4-Panel Dashboard)。
   - [x] 成功將核心評估指標匯出為根目錄下的 `metrics.json`。
+
+### Week 10: Keyword vs Semantic Retrieval（關鍵字檢索 vs 語意檢索）
+- [x] **環境設定**：執行 `notebooks/10_setup.ipynb`，安裝 `jieba`、`rank_bm25`、`scikit-learn`、`sentence-transformers`，並自動更新 `requirements.txt` 與 `.gitignore`（`models/`、`data/embeddings/` 不上傳）。
+- [x] **關鍵字檢索**：jieba 斷詞 + TF-IDF（任務 1-A）、BM25（任務 1-B）。
+- [x] **語意檢索**：cosine 相似度（任務 2-A）、`BAAI/bge-small-zh-v1.5` 句向量檢索（任務 2-B）。
+- [x] **比較兩種檢索**：10 個校規問題人工判斷 hit@3 → TF-IDF 0.4、BM25 0.5、句向量 0.8；換句話說的問題，關鍵字檢索為 0、句向量為 0.6（任務 3-A、3-B）。
+- [x] **自己設計 2 題**（任務 3-C）並完成 3 題反思。
+- **新增檔案**：`notebooks/10_setup.ipynb`、`notebooks/10_vector_similarity.ipynb`、`week10_retrieval_comparison.json`
